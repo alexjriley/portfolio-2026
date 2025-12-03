@@ -13,13 +13,13 @@
     /* Theme colors */
     --color-primary: hsl(30, 33%, 5%);
     /* Smoky Black */
-    --color-accent: #ff6b6b;
+    --color-accent: #0a5aa1;
     /* accent / highlight */
     --color-bg: #181818;
     --footer-bg: #0f0f0f;
     --color-surface: #252525;
     --color-text: #ffffff;
-    --color-muted: #6b7280;
+    --color-muted: #eff4fc;
     --color-success: #10b981;
     --color-danger: #ef4444;
     --link-hover-color: #ff6b6b;
@@ -173,6 +173,8 @@ a:hover {
 
 .card-text {
     color: var(--color-muted);
+    font-size: 0.8rem;
+    padding: 5px 5px;
 }
 
 /* Badge styles */
