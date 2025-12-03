@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Alex's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="mailto:your.email@example.com">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="home" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="assets/images/BristolCable_Headshots2024_GiuliaSpadafora_HiRes-00016.jpg" alt="Headshot" class="img-fluid rounded-circle" width="250">
+            </div>
+            <div class="col-md-8 py-4">
+                <h1>About Me</h1>
+                <p class="lead">Hi I'm Alex, I have experience in digital marketing, events organisation, website management and over a decade in video and graphic content creation.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Work Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Latest Work</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <a href="https://www.youtube.com/watch?v=YT-u8Brnl7Q" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="assets/images/caerau-still.jpeg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Documentary: Caerau</h5>
+                            <p class="card-text">Caerau (Maesteg) ranks as one of the highest wards in Wales for deprivation, but it's community resolve couldn't be stronger.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/alexjriley/dj-depo" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="assets/images/dj-depo-phone.jpeg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">App: DJ Depo</h5>
+                            <p class="card-text">A full-stack Django web app for DJs to share and discover new mixes. Capstone project.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/alexjriley/Team01_Hackathon" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="assets/images/newbie-still.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">App: NewbieToNinja</h5>
+                            <p class="card-text">A platform for users who are looking to switch careers into software development. Built during Hackathon with Code Institute.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Alex Riley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

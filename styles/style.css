@@ -1,0 +1,188 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global font and colour control */
+
+:root {
+    /* Fonts */
+    --font-sans: 'Noto Sans', sans-serif;
+    --font-heading: 'Momo Trust Display', sans-serif;
+
+    /* Theme colors */
+    --color-primary: hsl(30, 33%, 5%);
+    /* Smoky Black */
+    --color-accent: #ff6b6b;
+    /* accent / highlight */
+    --color-bg: #181818;
+    --footer-bg: #0f0f0f;
+    --color-surface: #252525;
+    --color-text: #ffffff;
+    --color-muted: #6b7280;
+    --color-success: #10b981;
+    --color-danger: #ef4444;
+    --link-hover-color: #ff6b6b;
+    --link-color: #ffffff;
+
+    /* Layout */
+    --max-content-width: 1400px;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+
+.navbar {
+    background-color: var(--color-bg) !important;
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+    min-height: 7vh;
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    max-height: 100px;
+    font-size: var(--fs-scale-3);
+    color: var(--color-text) !important;
+}
+
+.navbar-nav {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    color: var(--color-text) !important;
+}
+
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-text);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+/* Body styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h3 {
+    font-family: var(--font-heading);
+    padding-bottom: 10px;
+    color: var(--color-text);
+}
+
+h2,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+body .btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* Link styles */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Card styles for carousel */
+.card {
+    background-color: var(--color-surface);
+    border-color: var(--color-surface);
+    color: var(--color-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.card-title {
+    color: var(--color-text);
+}
+
+.card-text {
+    color: var(--color-muted);
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 107, 107, 0.7);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: var(--color-accent);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-bg) !important;
+    color: var(--color-text);
+}
+
+footer p {
+    color: var(--color-text);
+}
