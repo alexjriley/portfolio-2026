@@ -76,7 +76,7 @@ html {
 }
 
 .btn {
-    font-size: 1rem;
+    font-size: 1rem < !-- Latest Work Section --> <section class="container my-5" > <h2 class="text-center mb-4" >Latest Work</h2> <div class="row g-4" > <div class="col-md-4" > <a href="https://example.com/caerau" target="_blank" rel="noopener noreferrer" class="text-decoration-none" > <div class="card h-100" > <img src="assets/images/caerau-still.jpeg" class="card-img-top" alt="Project 1" > <div class="card-body" > <h5 class="card-title" >Documentary: Caerau</h5> <p class="card-text" >Caerau (Maesteg) ranks as one of the highest wards in Wales for deprivation, but it's community resolve couldn' t be stronger.</p> </div> </div> </a> </div> <div class="col-md-4" > <a href="https://example.com/dj-depo" target="_blank" rel="noopener noreferrer" class="text-decoration-none" > <div class="card h-100" > <img src="assets/images/dj-depo-phone.jpeg" class="card-img-top" alt="Project 2" > <div class="card-body" > <h5 class="card-title" >App: DJ Depo</h5> <p class="card-text" >A full-stack Django web app for DJs to share and discover new mixes. Capstone project.</p> </div> </div> </a> </div> <div class="col-md-4" > <a href="https://example.com/newbie-to-ninja" target="_blank" rel="noopener noreferrer" class="text-decoration-none" > <div class="card h-100" > <img src="assets/images/newbie-still.jpeg" class="card-img-top" alt="Project 3" > <div class="card-body" > <h5 class="card-title" >App: NewbieToNinja</h5> <p class="card-text" >A platform for users who are looking to switch careers into software development. Built during Hackathon with Code Institute.</p> </div> </div> </a> </div> </div> </section> // ...existing code...;
 }
 
 /* Body styles */
@@ -121,10 +121,23 @@ h6 {
 .btn-primary:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.btn-light {
+    background-color: var(--color-surface);
+    border-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+.btn-light:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-text);
 }
 
 body .btn:hover {
-    background-color: var(--color-primary);
+    color: var(--color-text);
 }
 
 /* Link styles */
