@@ -12,17 +12,14 @@
 
     /* Theme colors */
     --color-primary: hsl(30, 33%, 5%);
-    /* Smoky Black */
-    --color-accent: #008de5;
-    /* accent / highlight */
+    --color-accent: #14b8a6;
+    /* Vibrant teal - creative, modern, and personalized */
     --color-bg: #181818;
     --footer-bg: #0f0f0f;
     --color-surface: #252525;
     --color-text: #ffffff;
-    --color-muted: #eff4fc;
-    --color-success: #10b981;
-    --color-danger: #ef4444;
-    --link-hover-color: #ff6b6b;
+    --color-muted: #9ca3af;
+    --link-hover-color: #14b8a6;
     --link-color: #ffffff;
 
     /* Layout */
@@ -189,7 +186,7 @@ a:hover {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
+    box-shadow: 0 10px 30px rgba(20, 184, 166, 0.4);
 }
 
 .card-title {
@@ -211,6 +208,24 @@ a:hover {
     padding: 0.4em 0.65em;
 }
 
+/* App Development Section - Blue theme */
+#app-development .badge {
+    border-color: #3b9eff;
+}
+
+#app-development .card:hover {
+    box-shadow: 0 10px 30px rgba(59, 158, 255, 0.4);
+}
+
+/* Video Projects Section - Orange theme */
+#video-projects .badge {
+    border-color: #ff6b9d;
+}
+
+#video-projects .card:hover {
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+}
+
 /* Center align badges in cards */
 .card-body>div.mb-2 {
     text-align: center;
@@ -224,7 +239,7 @@ a:hover {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(255, 107, 107, 0.7);
+    background-color: rgba(20, 184, 166, 0.7);
     border-radius: 50%;
     padding: 20px;
 }
@@ -255,7 +270,7 @@ a:hover {
     background-color: var(--color-surface);
     border-color: var(--color-accent);
     color: var(--color-text);
-    box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(20, 184, 166, 0.25);
 }
 
 /* Footer styles */
@@ -274,7 +289,7 @@ footer p {
 
 .headshot:hover {
     transform: scale(1.05) !important;
-    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(20, 184, 166, 0.4) !important;
 }
 
 /* Social icons */
