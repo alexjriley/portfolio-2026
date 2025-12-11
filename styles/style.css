@@ -13,7 +13,7 @@
     /* Theme colors */
     --color-primary: hsl(30, 33%, 5%);
     /* Smoky Black */
-    --color-accent: #0a5aa1;
+    --color-accent: #008de5;
     /* accent / highlight */
     --color-bg: #181818;
     --footer-bg: #0f0f0f;
@@ -150,7 +150,11 @@ h6 {
 }
 
 body .btn:hover {
-    color: var(--color-text);
+    color: var(--color-accent);
+}
+
+.text-accent {
+    color: var(--color-accent);
 }
 
 /* Link styles */
@@ -176,15 +180,6 @@ a:hover {
     width: auto;
 }
 
-/* Card styles for carousel */@media (max-width: 768px) {
-    #contact-form {
-        padding: 30px 20px;
-    }
-    
-    .card-text {
-        font-size: 0.9rem;
-    }
-}
 .card {
     background-color: var(--color-surface);
     border-color: var(--color-surface);
@@ -293,6 +288,26 @@ footer p {
     color: var(--color-accent);
 }
 
+.btn-outline-primary {
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+}
+
+.display-4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+/* Add breathing room */
+section {
+    padding: 60px 0;
+}
+
 
 @media (max-width: 768px) {
 
@@ -326,5 +341,13 @@ footer p {
 
     .get-in-touch {
         text-align: center !important;
+    }
+
+    #contact-form {
+        padding: 30px 20px;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
     }
 }
