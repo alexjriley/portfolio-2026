@@ -171,6 +171,11 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+.headshot {
+    max-height: 370px;
+    width: auto;
+}
+
 /* Card styles for carousel */@media (max-width: 768px) {
     #contact-form {
         padding: 30px 20px;
@@ -316,6 +321,10 @@ footer p {
     }
     
     .social-icons {
+        text-align: center !important;
+    }
+
+    .get-in-touch {
         text-align: center !important;
     }
 }
