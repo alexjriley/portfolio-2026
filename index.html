@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Alex Riley - Full-stack developer and filmmaker portfolio"
+      content="Alex Riley is a digital communications specialist creating campaigns, content and accessible web experiences."
     />
-    <title>Portfolio</title>
+    <title>Alex Riley | Digital Communications Specialist</title>
 
     <!-- Favicon -->
     <link
@@ -63,6 +63,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
+              <a class="nav-link" href="#app-development">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
               <a class="btn btn-primary" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -83,13 +89,17 @@
         </div>
         <div class="col-md-8 py-4">
           <h1 class="display-6 fw-bold mb-3">
-            Digital strategist<br /><span class="text-accent"
-              >& communications specialist</span
+            Digital communications specialist<br /><span class="text-accent"
+              >creating campaigns, content and web experiences</span
             >
           </h1>
           <p class="lead">
-            Combining creative communications, engagement and web development.
+            I bring strategy, storytelling and practical web development
+            together to help ideas reach the people they are for.
           </p>
+          <a href="#app-development" class="btn btn-primary mt-2"
+            >View my work</a
+          >
           <div class="social-icons mt-4">
             <a
               href="https://github.com/alexjriley"
@@ -126,6 +136,23 @@
       </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section reveal-on-scroll">
+      <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-center mb-4">About</h2>
+          <p class="text-center">
+            I work across digital communications, community engagement and
+            web development, with a particular interest in projects that make
+            useful information clearer and more accessible. My portfolio
+            brings together campaign work, web applications and film projects.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
     <!-- App Development Section -->
     <section id="app-development" class="container my-5">
       <h2 class="text-center mb-4">App Development</h2>
@@ -153,9 +180,9 @@
                   <span class="badge bg-warning text-dark">JavaScript</span>
                 </div>
                 <p class="card-text">
-                  A platform for users who are looking to switch careers into
-                  software development. Built during Hackathon with Code
-                  Institute.
+                  A career-switching platform built during a Code Institute
+                  hackathon, designed to make the path into software
+                  development feel more approachable.
                 </p>
               </div>
             </div>
@@ -185,8 +212,8 @@
                   <span class="badge bg-success">Django</span>
                 </div>
                 <p class="card-text">
-                  A full-stack Django web app for DJs to share and discover new
-                  mixes. Capstone project.
+                  A full-stack Django app that gives DJs a place to share and
+                  discover new mixes. Built as a capstone project.
                 </p>
               </div>
             </div>
@@ -215,8 +242,8 @@
                   <span class="badge bg-warning text-dark">Bootstrap</span>
                 </div>
                 <p class="card-text">
-                  A simple, responsive, single-page website providing guidance
-                  on recognising safeguarding signs.
+                  A responsive single-page website that makes safeguarding
+                  guidance easier to find and understand.
                 </p>
               </div>
             </div>
@@ -253,7 +280,7 @@
                 </div>
                 <p class="card-text">
                   Caerau (Maesteg) ranks as one of the highest wards in Wales
-                  for deprivation, but it's community resolve couldn't be
+                  for deprivation, but its community resolve couldn't be
                   stronger.
                 </p>
               </div>
@@ -352,10 +379,31 @@
             <i class="bi bi-vimeo fs-4"></i>
           </a>
         </div>
-        <p class="mb-0">&copy; 2025 Alex Riley. All rights reserved.</p>
+        <p class="mb-0">&copy; 2026 Alex Riley. All rights reserved.</p>
       </div>
     </footer>
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const revealSections = document.querySelectorAll(".reveal-on-scroll");
+
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        revealSections.forEach((section) => revealObserver.observe(section));
+      } else {
+        revealSections.forEach((section) => section.classList.add("is-visible"));
+      }
+    </script>
   </body>
 </html>
